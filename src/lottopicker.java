@@ -11,20 +11,26 @@ lotto picker will generate and print out random numbers between 0-30 to the user
 //   pascalCase - where the first and every first letter of every new word is capitalized
 //  Camer Case - the first letter of the first word is lower, but every other first letter is capitalized
 
-import java.util.Random
+import java.util.Random;
 
 
 public class lottopicker {
     public static void main(String[] args) {
 
-        // data type variable name = the value to be stored
+        // DataType variable name = thevaluetobestored
         String nameOfIt = "Application started...";
-        Sytem.out.println(nameOfIt);
+        System.out.println(nameOfIt);
+        Random random = new Random();
 
-        double randomNumber = Math.random()
-                System.out.println(name OfIt)
+        int numberOfNumbersGenerated = 0;
+        int total = 5;
 
-        Math.random();
+        while(numberOfNumbersGenerated < total){
+            int randomNumber = random.nextInt(30);
+            System.out.println(randomNumber);
+            numberOfNumbersGenerated = numberOfNumbersGenerated + 1;
+        }
+
 
         /* programming is the combination off iteratives and conditions
         // iteratives - repeating a process over and over
